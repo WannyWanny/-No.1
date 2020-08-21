@@ -131,36 +131,3 @@ Window 10 Chrome
 6. MariDB
 
 +) Git, Jira 협업 툴 이용
-
-
-# 코드
-MVC 패턴
-### BackEnd(BE)
-#### 1. DTO/VO
-- User
-    - Users: 로그인
-    - SignupRequest: 회원가입
-- Blog
-    - Blog: 게시글 번호, 키워드, 블로그 제목, 내용, 글쓴이, 좋아요, 조회수, 작성시간
-    - BlogResponse: Blog list와 Keyword 구분하여 전달
-#### 2. Service
-#### 3. Dao
-- UserSignup: 회원관리 CRUD MyBatis 연동
-- BlogDao: Blog CRUD MyBatis 연동
-#### 4. Controller
-- AccountController: 회원 관리
-- BlogController: 블로그 관리
-#### 5. mappers
-- blog.xml: Blog CRUD MyBatis
-- user.xml: 회원 CRUD MyBatis
-
-### FrontEnd(FE)
-#### page
-##### blog
-- MyList: 로그인 한 회원의 글 쓴 리스트 출력
-##### user
-- Join: 회원가입
-- Login: 로그인
-- Update: 회원수정
-#### components\common
-- Header: 네이게이션바 & 로그인, 로그아웃
